@@ -28,3 +28,6 @@ And
 ###Requirements
 - jQuery
 - matchMedia polyfill for unsupported browsers (though these browsers don't support placeholder either, so...)
+
+###Todo
+- Create an alternate HTML5 `data-` based syntax
