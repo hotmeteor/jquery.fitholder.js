@@ -23,7 +23,7 @@
 
             // Store original placeholder.
             var orig = $this.attr('placeholder');
-            $this.data('ph-original', $this.attr('placeholder'));
+            $this.data('ph-original', orig);
 
             // Call on resize.
             var changer = function() {
