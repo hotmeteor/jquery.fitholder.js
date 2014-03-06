@@ -1,4 +1,4 @@
-jquery.fitholder.js
+jquery.fitholder
 ===================
 
 **Responsive input placeholder text.**
@@ -34,7 +34,7 @@ $('.myinput').fitholder();
 ```
 
 ###Version
-1.1.0
+1.1.1
 
 ###Requirements
 - jQuery

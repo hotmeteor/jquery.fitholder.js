@@ -1,0 +1,26 @@
+{
+  "name": "jquery.fitholder",
+  "main": "jquery.fitholder.js",
+  "version": "1.1.1",
+  "homepage": "https://github.com/hotmeteor/jquery.fitholder.js",
+  "authors": [
+    "Adam Campbell <adam@hotmeteor.com>"
+  ],
+  "description": "Responsive input placeholder text.",
+  "keywords": [
+    "fitholder",
+    "placeholder",
+    "input",
+    "responsive",
+    "form",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
