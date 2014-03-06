@@ -22,7 +22,7 @@ $('.myinput').fitholder({
 });
 ```
 
-Or, with well-formed JSON in a data- attribute.
+Or, with well-formed JSON in a data-fitholder attribute.
 
 ```
 <input class="myinput" type="text" 
@@ -41,7 +41,7 @@ $('.myinput').fitholder();
 
 ###Changelog
 __3/5/2014__
-- Added alternate HTML5 `data-` based syntax
+- Added alternate HTML5 `data-fitholder` based syntax
 
 __1/27/2013__
 - Initial version
