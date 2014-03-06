@@ -29,8 +29,6 @@
                 return;
             }
 
-            console.log(values);
-
             // Call on resize.
             var changer = function() {
 
