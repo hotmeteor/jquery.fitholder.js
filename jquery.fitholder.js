@@ -1,14 +1,9 @@
-/*global jQuery */
-/*! 
- * FitHolder.js 1.0
- *
- * Copyright 2013, Adam Campbell http://hotmeteor.com
- * Released under the WTFPL license
- * http://sam.zoy.org/wtfpl/
- *
- * Date: Sun Jan 27 21:45:00 2013 -0600
- */
-;
+/*!
+    Fitholder v1.0.0 - 2014-03-05
+    Responsive input placeholder text
+    (c) 2014 Adam Campbell (@hotmeteor)
+    license: http://www.opensource.org/licenses/mit-license.php
+*/
 (function($) {
 
     // Enable strict mode
@@ -25,16 +20,29 @@
             var orig = $this.attr('placeholder');
             $this.data('ph-original', orig);
 
+            // Check for data value.
+            if ($this.data('fitholder')) {
+                values = $this.data('fitholder');
+            }
+
+            if (!values) {
+                return;
+            }
+
+            console.log(values);
+
             // Call on resize.
             var changer = function() {
-                    for (var media in values) {
 
-                        // if there's no media specified, OR w.matchMedia is supported 
-                        if (!media || (window.matchMedia && window.matchMedia(media).matches)) {
-                            $this.attr('placeholder', values[media]);
-                        }
+                for (var media in values) {
+
+                    // if there's no media specified, OR w.matchMedia is supported 
+                    if (!media || (window.matchMedia && window.matchMedia(media).matches)) {
+                        $this.attr('placeholder', values[media]);
                     }
-                };
+                }
+
+            };
 
             $(window).on('resize', changer);
 

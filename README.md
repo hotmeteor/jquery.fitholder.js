@@ -9,25 +9,40 @@ Sometimes, input placeholders can be too long for mobile screens, or too concise
 ***
 
 ###How do I use this?
-Simple.
+__Simple.__ As options in the plugin:
 
-    <input class="myinput" type="text" placeholder="This is the default placeholder text" />
-    
-And
+```
+<input class="myinput" type="text" placeholder="This is the default placeholder text" />
+```
+```
+$('.myinput').fitholder({
+    "(min-width: 300px)": 'Default',
+    "(min-width: 700px)": 'Default text',
+    "(min-width: 1000px)": 'This is default text'
+});
+```
 
-    $(document).ready(function() {    
+Or, with well-formed JSON in a data- attribute.
 
-        $('.myinput').fitholder({
-            "(min-width: 300px)": 'Default',
-            "(min-width: 700px)": 'Default text',
-            "(min-width: 1000px)": 'This is default text'
-        });
-        
-    });
+```
+<input class="myinput" type="text" 
+	placeholder="This is the default placeholder text" 
+	data-fitholder='{"(min-width: 300px)":"Inline","(min-width: 700px)":"Inline values","(min-width: 1000px)":"These are inline values"}' />
+```
+```
+$('.myinput').fitholder();
+```
+
+###Version
+1.1.0
 
 ###Requirements
 - jQuery
-- matchMedia polyfill for unsupported browsers (though these browsers don't support placeholder either, so...)
 
-###Todo
-- Create an alternate HTML5 `data-` based syntax
+###Changelog
+__3/5/2014__
+- Added alternate HTML5 `data-` based syntax
+
+__1/27/2013__
+- Initial version
+- Use Fitholder with jQuery
