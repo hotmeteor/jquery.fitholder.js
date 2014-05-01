@@ -1,5 +1,5 @@
 /*!
-    Fitholder v1.0.0 - 2014-03-05
+    Fitholder
     Responsive input placeholder text
     (c) 2014 Adam Campbell (@hotmeteor)
     license: http://www.opensource.org/licenses/mit-license.php
